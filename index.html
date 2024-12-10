@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simon Says</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1 class="silkscreen-bold">Simon Says - Memory Game!</h1>
+    <div class="settings">
+      <label for="difficulty-select">difficulty:</label>
+
+      <select name="difficulty" id="difficulty-select">
+        <option value="normal">normal</option>
+        <option value="hard">hard</option>
+      </select>
+    </div>
+    <div class="buttons">
+      <div>
+        <div id="yellow" class="yellow button"></div>
+        <div id="green" class="green button"></div>
+      </div>
+      <div>
+        <div id="red" class="red button"></div>
+        <div id="blue" class="blue button"></div>
+      </div>
+    </div>
+    <div class="center-button">
+      <button id="start" class="silkscreen-regular">Start Game</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./game.js"></script>
+  </body>
+</html>
